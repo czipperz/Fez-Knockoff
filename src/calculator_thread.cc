@@ -110,7 +110,7 @@ void calculator_thread(sdl::renderer* rend) {
     level.platforms.push_back(
         czipperz::platform({200, 0}, {400, 0}, 250, 100, 50));
     level.platforms.push_back(
-        czipperz::platform({400, 0}, {0, 0}, 400, 100, 50));
+        czipperz::platform({350, 0}, {0, 0}, 400, 100, 50));
     level.platforms.push_back(
         czipperz::platform({500, 0}, {400, 0}, 550, 100, 50));
 
