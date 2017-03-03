@@ -16,8 +16,8 @@ struct level {
 
     level(sdl::texture front, sdl::texture right, sdl::texture back,
           sdl::texture left)
-        : textures({std::move(front), std::move(right),
-                   std::move(back), std::move(left)}) {}
+        : textures{std::move(front), std::move(right),
+                   std::move(back), std::move(left)} {}
 };
 }
 
