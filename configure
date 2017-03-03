@@ -1,4 +1,9 @@
 #!/bin/bash
 
 git clone https://github.com/czipperz/libSDLzz sdl
-cmake .
+
+local build_type=Release
+if [ "$1" = "--debug" ]; then
+    build_type=Debug
+fi
+cmake . -DCMAKE_BUILD_TYPE=${build_type}
